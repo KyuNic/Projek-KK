@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
+
+.kepala {
+  background-image: url(fotobersama2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class {
+  background-color: black;
+}
+
+.class h2 {
+  color: white;
+  background-color: black;
+}
+
+.mata h1 {
+  color: white;
+  -webkit-text-stroke: 2px darkblue;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.mata2 {
+  color: white;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.class {
+  background-color: black;
+  margin: 0;
+}
+
+.class h2 {
+  color: white;
+  margin: 0;
+}
+
+.carousel-inner img {
+  width: 70vw;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+}
+
+.klass {
+  color: white;
+}
+.wali-kelas {
+  background-color: white;
+  width: 160px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
