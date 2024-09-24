@@ -2,6 +2,7 @@
 
 .kepala {
   background-image: url(fotobersama2.jpg);
+  background-image: cover;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -20,12 +21,18 @@
   background-color: black;
 }
 
+.logo {
+  position: absolute;
+  top: 20%;
+}
+
 .mata h1 {
   color: white;
   -webkit-text-stroke: 2px darkblue;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   font-style: normal;
+  text-shadow: 1px 1px 10px white;
 }
 
 .mata2 {
@@ -50,15 +57,282 @@
   display: flex;
 }
 
-.klass {
-  color: white;
+/* Styling for the structure */
+.strukturjadwal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.wali-kelas {
-  background-color: white;
-  width: 160px;
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+
+.line {
+  width: 2px;
   height: 50px;
-  border-radius: 50%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.strukturjadwal {
+  margin: auto;
+}
+
+#structure-btn {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 20px white;
+}
+
+#schedule-btn {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 20px white;
+}
+
+.dan {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 1220px;
+  right: 617px;
+  font-weight: bold;
+  text-shadow: 1px 1px 20px white;
+}
+
+#display-area {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.chat-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 400px;
+  border-radius: 30px;
+  background-color: #333;
+}
+
+#chat-box {
+  width: 90%;
+  height: 490px;
+  margin-bottom: 20px;
+  background-color: #b4b3b3;
+  border-radius: 20px;
+  overflow-y: scroll;
+}
+
+.chat-container h1 {
+  color: white;
+  text-shadow: 1px 1px 20px white;
+  margin: 20px;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #575757;
+  color: white;
+  margin-right: 10px;
+  outline: none;
+}
+
+.chat-message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+footer {
+  color: white;
+  margin-top: 100px;
+}
+
+footer img {
+  float: left;
+  margin-right: 4rem;
+  margin-left: 30px;
+}
+
+footer h3 {
+  width: 300px;
+  margin-left: 40%;
+  float: left;
+}
+
+.created {
+  height: 180px;
+  float: left;
+}
+
+.nama1 {
+  margin-left: 40%;
+  font-size: 18px;
+  float: left;
+}
+
+.gambarfooter {
+  height: 180px;
+  float: left;
+  /* clear: both; */
+}
+
+.mediasosal {
+  margin-left: 80px;
+  height: 200px;
+  float: left;
+  font-size: 30px;
+}
+
+span .mediasosial {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.mediasosal a {
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+}
+
+.footer {
+  width: 100%;
+}
+.mediasosal a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin: 0;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to bottom, #1a1a1a, #3b0a45);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.container-ratting {
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  margin-bottom: 20px;
+}
+.rating p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 160px;
+}
+.face {
+  font-size: 2em;
+  margin-bottom: 20px;
+  position: absolute;
+  right: 185px;
+  top: 2350px;
+}
+.slider-container {
+  position: absolute;
+  right: 40px;
+  width: 300px;
+}
+.slider {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+input {
+  float: left;
 }
