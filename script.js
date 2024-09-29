@@ -28,7 +28,7 @@ const mataPelajaran = [
   ["Pkn", "B.Inggris", "kK", "Kaligrafi Mandarin", "B.Indonesia", "Prkw"],
   ["Pjok", "ME", "Kk", "B.Indonesia", "Agama"],
   ["IGTS", "Kk", "Bahasa Mandarin", "Sejarah", "Bisnis Manajemen"],
-  ["Pemantapan MoraL", "Mtk", "Bisnis Manajeme", "Kk", "Prkw"],
+  ["Pemantapan MoraL", "Mtk", "Bisnis Manajemen", "Kk", "Prkw"],
   ["EKSKUL", "Ekskul Pilihan"],
 ];
 
@@ -83,25 +83,18 @@ function showSchedule() {
   const mapelList = document.createElement("ul");
   mapelHariIni.forEach(function (mapel) {
     const listItem = document.createElement("li");
-    listItem.style.marginTop = "30px";
+    listItem.style.marginTop = "5px";
     listItem.textContent = mapel;
     mapelList.appendChild(listItem);
-  });
-  displayArea.appendChild(mapelList);
-  mapelList.style.color = "white";
 
-  const hariIniPiket = jadwalPiket[hariIni];
-  const piket = document.createElement(`h4`);
-  piket.textContent = `Jadwal Piket`;
-  const piketList = document.createElement("ul");
-  hariIniPiket.forEach(function (piket) {
-    const listItem = document.createElement("li");
-    listItem.style.marginTop = "30px";
-    listItem.textContent = piket;
+    const horizontalLine = document.createElement("hr");
+    horizontalLine.style.marginTop = "3px";
+    horizontalLine.setAttribute("size", "5");
+    horizontalLine.style.backgroundColor = "white";
     mapelList.appendChild(listItem);
+    mapelList.appendChild(horizontalLine);
   });
   displayArea.appendChild(mapelList);
-  displayArea.appendChild(piketList);
   mapelList.style.color = "white";
 }
 
@@ -117,11 +110,6 @@ function createLine() {
   const line = document.createElement("div");
   line.className = "line";
   return line;
-}
-
-function CreateHLine() {
-  const hLine = document.querySelector(".horizontal-line");
-  return hLine;
 }
 
 // Fungsi untuk membuat column dengan peran dan anggotanya
