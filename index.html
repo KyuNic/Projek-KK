@@ -13,21 +13,8 @@
 
     <title>XI TKJ</title>
   </head>
-  <body style="background-color: black" ;>
-    <div
-      class="container-utama"
-      style="
-        background: rgb(6, 6, 89);
-        background: linear-gradient(
-          180deg,
-          rgba(6, 6, 89, 1) 11%,
-          rgba(5, 39, 112, 1) 32%,
-          rgba(4, 93, 161, 1) 54%,
-          rgba(255, 252, 252, 1) 98%
-        );
-      "
-      ;
-    >
+  <body style="background-color: #1a1a1a" ;>
+    <div class="container-utama">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <div class="container">
@@ -47,7 +34,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#Gallery">Gallery</a>
+              <a class="nav-link" href="#Galery">Gallery</a>
               <a class="nav-link" href="#Stucture">Stucture</a>
             </div>
           </div>
@@ -60,11 +47,9 @@
         </header>
       </header>
     </div>
-    <main>
-      <div class="container-galery">
-        <div class="class text-center" id="Gallery" style="margin-top: 30px">
-          <h2>Class Gallery</h2>
-        </div>
+    <main style="background-color: black">
+      <div id="Galery" class="container-galery">
+        <h2>Class Gallery</h2>
         <div
           id="carouselExampleControls"
           class="carousel slide m-auto"
@@ -111,12 +96,12 @@
         </div>
       </div>
 
-      <div id="Stucture" class="strukturjadwal" style="margin-top: 120px">
+      <div id="Stucture" class="strukturjadwal">
         <!-- Tombol untuk menampilkan Struktur Kelas dan Jadwal -->
         <div class="tombol">
-          <button id="structure-btn" class="btn">Structure</button>
+          <div id="structure-btn" class="btn">Structure</div>
           <span class="dan">&</span>
-          <button id="schedule-btn" class="btn">Schedule</button>
+          <div id="schedule-btn" class="btn">Schedule</div>
         </div>
         <!-- Konten yang akan berubah berdasarkan tombol -->
 
@@ -152,7 +137,7 @@
         <div class="created">
           <h3>Created By</h3>
 
-          <div class="nama1 mt-4">
+          <div class="nama1 mt-xl-4">
             Chandra,Wilson
             <div class="mt-4">Nicholas,Kisardi</div>
             <div class="mt-4">Maverick,Risky</div>
