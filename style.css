@@ -20,11 +20,6 @@ html {
   align-items: center;
 }
 
-.logo {
-  position: absolute;
-  top: 20%;
-}
-
 .mata h1 {
   color: white;
   -webkit-text-stroke: 2px darkblue;
@@ -50,8 +45,8 @@ html {
 }
 
 .carousel-inner img {
-  width: 70vw;
-  height: 70vh;
+  /* width: 70vw; */
+  /* height: 70vh; */
   margin: auto;
   display: flex;
   padding-top: 30px;
@@ -89,7 +84,6 @@ html {
   border-radius: 20px;
   text-align: center;
   font-weight: bold;
-  position: relative;
 }
 
 .line {
@@ -97,14 +91,6 @@ html {
   height: 50px;
   background-color: white;
   margin: 0 auto;
-}
-
-.horizontal-line {
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  position: absolute;
-  top: 50%;
 }
 
 button {
@@ -127,12 +113,12 @@ button {
   text-shadow: 1px 1px 20px white;
 }
 
-.dan {
+.tombol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 28px;
-  position: absolute;
-  top: 1220px;
-  right: 617px;
+  font-size: 30px;
   font-weight: bold;
   text-shadow: 1px 1px 20px white;
 }
@@ -212,52 +198,45 @@ input {
 }
 
 footer {
+  background: linear-gradient(to bottom, #000, #4e37d0);
+  font-family: Arial, sans-serif;
   color: white;
-  margin-top: 100px;
 }
-
-footer img {
-  float: left;
-  margin-right: 4rem;
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 100px;
+}
+.footer img {
   margin-left: 30px;
 }
 
-footer h3 {
-  width: 300px;
-  margin-left: 40%;
-  float: left;
-}
-
 .created {
-  height: 180px;
-  float: left;
+  display: grid;
+  grid-template-rows: repeat(4, 1.5fr);
+}
+.created h3 {
+  margin-left: 40%;
 }
 
-.nama1 {
+.nama {
   margin-left: 40%;
-  font-size: 18px;
-  float: left;
+  font-size: 1rem;
+}
+.nama1 {
+  font-size: 1.5em;
 }
 
 .gambarfooter {
   height: 180px;
-  float: left;
-  /* clear: both; */
 }
 
 .mediasosal {
-  margin-left: 80px;
+  margin-left: 60%;
   height: 200px;
   float: left;
   font-size: 20px;
-}
-
-span .mediasosial {
-  float: right;
-}
-
-.clearfix {
-  clear: both;
 }
 
 .mediasosal a {
@@ -265,10 +244,10 @@ span .mediasosial {
   margin-top: 20px;
   display: block;
 }
-
-.footer {
-  width: 100%;
+.mediasosal .mediasos.i {
+  color: #ffff;
 }
+
 .mediasosal a:hover {
   text-decoration: underline;
 }
@@ -277,49 +256,36 @@ span .mediasosial {
   width: 100%;
 }
 
-footer {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to bottom, #000, #4e37d0);
-  font-family: Arial, sans-serif;
-  color: white;
-}
-
 .container-ratting {
-  text-align: center;
+  margin-left: 160px;
 }
 
 .rating {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 300px;
   margin-bottom: 20px;
+  margin-right: 160px;
 }
+
 .rating p {
   font-size: 1.2em;
   font-weight: bold;
-  margin-left: 180px;
+  margin-left: 80px;
 }
 .face {
   font-size: 2em;
   margin-bottom: 20px;
+  margin-left: 70px;
 }
-.slider-container {
-  position: absolute;
-  right: 40px;
-  width: 300px;
-}
+
 .slider {
-  width: 100%;
+  width: 60%;
   height: 5px;
   background: #ccc;
   outline: none;
   opacity: 0.7;
-  transition: opacity 0.2s;
+  transition: opacity 0.1s;
+  margin-left: 70px;
 }
 .slider:hover {
   opacity: 1;
@@ -344,31 +310,36 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .footer {
+    /* width: 100%; */
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0%, 100%;
+    grid-template-areas:
+      "logo buat follow"
+      "rate rate rate";
+  }
   .gambarfooter {
-    position: absolute;
-    top: 2160px;
+    grid-area: logo;
+    padding-left: 5px;
+    margin-right: 2rem;
   }
   .created {
-    position: absolute;
-    right: 140px;
-    top: 2160px;
+    grid-area: buat;
+    padding-right: 70%;
+  }
+  .nama1 {
+    font-size: 1.5em;
   }
   .mediasosal {
-    position: absolute;
-    top: 2160px;
-    right: 60px;
+    grid-area: follow;
+    margin-left: 30%;
+    margin-right: 30%;
   }
   .container-ratting {
-    margin-top: 20px;
-  }
-  .value {
-    position: absolute;
-    top: 0px;
-    right: 300px;
-  }
-  .container-ratting .face {
-    position: absolute;
-    top: 0;
-    left: 70px;
+    grid-area: rate;
+    margin-left: 0px;
+    margin-right: px;
   }
 }
