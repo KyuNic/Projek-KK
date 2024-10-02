@@ -27,6 +27,7 @@ html {
   font-weight: 800;
   font-style: normal;
   text-shadow: 1px 1px 10px white;
+  z-index: 99999999;
 }
 
 .container-galery {
@@ -216,12 +217,8 @@ footer {
   display: grid;
   grid-template-rows: repeat(4, 1.5fr);
 }
-.created h3 {
-  margin-left: 40%;
-}
 
 .nama {
-  margin-left: 40%;
   font-size: 1rem;
 }
 .nama1 {
@@ -284,7 +281,7 @@ footer {
   background: #ccc;
   outline: none;
   opacity: 0.7;
-  transition: opacity 0.1s;
+  transition: opacity 0.2s;
   margin-left: 70px;
 }
 .slider:hover {
@@ -315,7 +312,6 @@ footer {
     padding-top: 150px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0%, 100%;
     grid-template-areas:
       "logo buat follow"
       "rate rate rate";
@@ -327,7 +323,7 @@ footer {
   }
   .created {
     grid-area: buat;
-    padding-right: 70%;
+    padding-right: 100%;
   }
   .nama1 {
     font-size: 1.5em;
@@ -341,5 +337,42 @@ footer {
     grid-area: rate;
     margin-left: 0px;
     margin-right: px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    /* width: 100%; */
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "logo buat follow"
+      "rate rate rate";
+  }
+  .gambarfooter {
+    grid-area: logo;
+    padding-left: 5px;
+    margin-right: 2rem;
+  }
+  .created {
+    grid-area: buat;
+    padding-right: 100%;
+  }
+  .nama1 {
+    font-size: 1.5em;
+  }
+  .mediasosal {
+    grid-area: follow;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .container-ratting {
+    grid-area: rate;
+    margin-left: 0px;
+    margin-right: px;
+  }
+  .slider {
+    width: 80%;
   }
 }
